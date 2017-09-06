@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="dist/style.min.css" type="text/css">
+        <title>Google</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="header-nav nav-bar">
+                <ul class="navbar-right">
+                    <li>
+                        <a href="#">Gmail</a>
+                    </li>
+                    <li>
+                        <a href="#">Images</a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="glyphicon" id="menu-glyphicon"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="glyphicon" id="notification-glyphicon"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="assets/img/avatar.jpg" alt="Account avatar logo">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <center class="content-container">
+                <div>
+                    <div id="google-logo">
+                        <span id="google-logo__country-code">UK</span>
+                    </div>
+                </div>
+                <form class="search-content" action="/search" method="get" role="search">
+                    <input id="search-bar" type="text" required>
+                    <span class="glyphicon" id="microphone-glyph"></span> <!-- Microphone -->
+                    <span class="glyphicon" id="search-glyph"></span> <!--Search (display hidden) -->
+
+                    <div class="query-inputs">
+                        <input class="query-inputs__input-1" id="google-search-input" value="Google Search" type="submit"></input>
+                        <input class="query-inputs__input-2" id="feeling-lucky-input" value="I'm Feeling Lucky" type="submit"></input>
+                    </div>
+                </form>
+            </center>
+        </main>
+
+        <footer class="footer">
+            <div class="content-container">
+                <nav class="footer-nav nav-bar">
+                    <ul class="navbar-left">
+                        <li>
+                            <a href="#">Advertising</a>
+                        </li>
+                        <li>
+                            <a href="#">Business</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-right">
+                        <li>
+                            <a href="#">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms</a>
+                        </li>
+                        <li>
+                            <a href="#">Settings</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</html>
