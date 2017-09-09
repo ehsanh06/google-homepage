@@ -1,91 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <link rel="stylesheet" href="dist/style.min.css" type="text/css">
-        <title>Google</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <title>mdn - Google Search</title>
     </head>
 
     <body>
+        
         <header>
-            <nav class="header-nav nav-bar">
-                <ul class="navbar-right">
+            <div class="logo-container">
+                <a href="#" aria-label="Google Logo">
+                    <img id="logo" src="assets/img/logo.png" alt="Google" title="Go to Google Home">
+                </a>
+            </div>
+            <form action="get">
+                <div id="input-container">
+                    <input type="text" role="search" value="mdn" />
+                    <div class="input-btn-container">
+                        <span role="button search" class="glyphicon glyphicon-mic"></span>
+                        <span role="button search" class="glyphicon glyphicon-search"></span>
+                    </div>
+                </div>
+            </form>
+            <nav>
+                <ul>
                     <li>
-                        <a href="#">Gmail</a>
-                    </li>
-                    <li>
-                        <a href="#">Images</a>
-                    </li>
-                    <li>
-                        <a>
-                            <span class="glyphicon" id="menu-glyphicon"></span>
+                        <a href="#" aria-label="Main Menu">
+                            <span role="button" class="glyphicon glyphicon-menu"></span>
                         </a>
                     </li>
                     <li>
-                        <a>
-                            <span class="glyphicon" id="notification-glyphicon"></span>
+                        <a href="#" aria-label="Notifications">
+                            <span role="button" class="glyphicon glyphicon-notification"></span>
                         </a>
                     </li>
                     <li>
-                        <a>
-                            <img src="assets/img/avatar.jpg" alt="Account avatar logo">
+                        <a href="#" aria-label="Profile Avatar">
+                            <img src="assets/img/avatar.jpg" alt="Account Avatar" title="Google Account: Joe Bloggs">
                         </a>
                     </li>
                 </ul>
             </nav>
+            <div id="query-options">
+                <ul class="left">
+                    <li><a href="#" class="active">All</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Shopping</a></li>
+                    <li><a href="#">Images</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li>
+                        <a href="#">More</a>
+                        <ul>
+                            <li>Maps</li>
+                            <li>Books</li>
+                            <li>Flights</li>
+                            <li>Personal</li>
+                        </ul>
+                    </li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <ul class="right">
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Tools</a></li>
+                </ul>
+            </div>
         </header>
 
-        <main class="main">
-            <center class="content-container">
-                <div>
-                    <div id="google-logo">
-                        <span id="google-logo__country-code">UK</span>
+        <main>
+            <small>About 13,700,000 results (0.68 seconds)</small>
+            <div class="search-result">
+                <h3 class="search-title">
+                    <a href="#">MDN Web Docs</a>
+                </h3>
+                <span>https://developer.mozilla.org/</span>
+                <p>
+                    The <span class="strong">Mozilla Developer Network (MDN) </span>provides information about Open Web technologies
+                    including HTML, CSS, and APIs for both Web sites and HTML5 Apps.
+                </p>
+
+                <div class="search-result-sublinks two-col">
+                    <div class="col-1">
+                        <div>
+                            <h3 class="search-title">
+                                <a href="#">JavaScript</a>
+                            </h3>
+                            <p>JavaScript (JS) is a lightweight interpreted or JIT-compiled ...</p>
+                        </div>
+                        <div>
+                            <h3 class="search-title">
+                                <a href="#">HTML</a>
+                            </h3>
+                            <p>HTML basics - HTML refernce - HTML element reference - Input</p>
+                        </div>
+                        <div>
+                            <h3 class="search-title">
+                                <a href="#">Learn web development</a>
+                            </h3>
+                            <p>JavaScript - HTML developer guide - JavaScript first steps - ...</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div>
+                            <h3 class="search-title">
+                                <a href="#">CSS</a>
+                            </h3>
+                            <p>Cascading Style Sheets (CSS) is a stylesheet language used ...</p>
+                        </div>
+                        <div>
+                            <h3 class="search-title">
+                                <a href="#">Web technology for developers</a>
+                            </h3>
+                            <p>JavaScript - HTML - CSS - App Center - SVG - Web security ...</p>
+                        </div>
+                        <div>
+                            <h3 class="search-title">
+                                <a href="#">Tutorials</a>
+                            </h3>
+                            <p>HTML Tutorials ... MDN HTML element reference: A ...</p>
+                        </div>
+                    </div>
+
+                    <span><a href="#">More results from mozilla.org &raquo;</a></span>
+                </div>
+            </div>
+
+            <div class="search-result">
+                <h3 class="search-title">
+                    <a href="#">MDN Web Docs - Wikipedia</a>
+                </h3>
+                <span>https://en.wikipedia.org/wiki/MDN_Web_Docs</span>
+                <p>
+                    <span class="strong">MDN</span> Web Docs, previously <span class="strong">Mozilla Developer Network</span> 
+                    and formerly Mozilla Developer Center, is the official Mozilla website for development documentation
+                    of ...
+                </p>
+            </div>
+            <div class="search-result">
+                <h3 class="search-title">
+                    <a href="#">Mozilla Developer Network · GitHub</a>
+                </h3>
+                <span>https://github.com/mdn/</span>
+                <p>
+                    GitHub is where people build software. More than 24 Million people use GitHub to discover, fork, and contribute to over 66
+                    million projects.
+                </p>
+            </div>
+            <div class="search-result">
+                <h3 class="search-title">
+                    <a href="#">GitHub - mozilla/kuma: The project that powers MDN.</a>
+                </h3>
+                <span>https://github.com/mozilla/kuma</span>
+                <p>
+                    Latest commit 068486f 3 hours ago escattone committed on GitHub Merge pull request #4413 from
+                     jwhitlock/interactive-examples-config-1... ... ... Kuma is the platform that powers <span class="strong">MDN</span>
+                     (developer.mozilla.org) ... Want to help make <span class="strong">MDN</span> great?
+                </p>
+            </div>
+            <div class="search-result">
+                <h3 class="search-title">
+                    <a href="#">MDN web docs (@MozDevNet) | Twitter</a>
+                </h3>
+                <span>https://twitter.com/mozdevnet?lang=en</span>
+                <p>
+                    The latest Tweets from <span class="strong">MDN</span> web docs (@MozDevNet). The official 
+                    <span class="strong">MDN</span> account. We deliver the best web docs around (with your help!).
+                    We also have a ...
+                </p>
+            </div>
+            <div class="search-result">
+                <h3 class="search-title">
+                    <a href="#">mdn - npm</a>
+                </h3>
+                <span>https://www.npmjs.com/package/mdn</span>
+                <p>
+                    CLI for easily opening JavaScript documentation on the Mozilla Developer Network  
+                    (<span class="strong">MDN</span>) in your browser.
+                </p>
+            </div>
+            <div class="search-result">
+                <h3 class="search-title">
+                    <a href="#">Anyone else think MDN code descriptions/samples suck ...</a>
+                </h3>
+                <span>https://forum.freecodecamp.org/t/anyone-else-think-mdn-code-descriptions.../5784</span>
+                <ul>
+                    <li>29 May 2016</li>
+                    <li>20 posts</li>
+                    <li>11 authors</li>
+                </ul>
+                <p>
+                    Anyone else feeling that way about <span class="strong">MDN</span>? Are they TRYING to make it
+                     difficult in an effort to flex their coding muscles or something? They are ...
+                </p>
+            </div>
+
+            <div class="search-related">
+                <h3>Searches related to mdn</h3>
+                <div class="two-col">
+                    <div class="col-1">
+                        <ul>
+                            <li><a href="#">mdn <span class="strong">html</span></a></li>
+                            <li><a href="#">mdn <span class="strong">html element</span></a></li>
+                            <li><a href="#"><span class="strong">mozilla developer network javascript</span></a></li>
+                            <li><a href="#">mdn<span class="strong">element reference</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <ul>
+                            <li><a href="#">mdn <span class="strong">doctype</span></a></li>
+                            <li><a href="#">mdn <span class="strong">number</span></a></li>
+                            <li><a href="#">mdn <span class="strong">functions</span></a></li>
+                            <li><a href="#">mdn <span class="strong">meaning</span></a></li>
+                        </ul>
                     </div>
                 </div>
-                <form class="search-content" action="/search" method="get" role="search">
-                    <input id="search-bar" type="text" required>
-                    <span class="glyphicon" id="microphone-glyph"></span> <!-- Microphone -->
-                    <span class="glyphicon" id="search-glyph"></span> <!--Search (display hidden) -->
+            </div>
 
-                    <div class="query-inputs">
-                        <input class="query-inputs__input-1" id="google-search-input" value="Google Search" type="submit"></input>
-                        <input class="query-inputs__input-2" id="feeling-lucky-input" value="I'm Feeling Lucky" type="submit"></input>
-                    </div>
-                </form>
-            </center>
+            <div class="search-results__page-number">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span></span> <!-- G -->
+                            </td>
+                            <td>
+                                <span></span>
+                                1
+                            </td>
+                            <td>
+                                <a href="#" aria-label="Page 2">
+                                    <span></span> <!-- O -->
+                                    2
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" aria-label="Page 3">
+                                    <span></span> <!-- O -->
+                                    3
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" aria-label="Page 4">
+                                    <span></span> <!-- O -->
+                                    4
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" aria-label="Page 5">
+                                    <span></span> <!-- O -->
+                                    5
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" aria-label="Page 6">
+                                    <span></span> <!-- O -->
+                                    6
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" aria-label="Page 7">
+                                    <span></span> <!-- O -->
+                                    7
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" aria-label="Page 8">
+                                    <span></span> <!-- O -->
+                                    8
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" aria-label="Page 9">
+                                    <span></span> <!-- O -->
+                                    9
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" aria-label="Page 10">
+                                    <span></span> <!-- O -->
+                                    10
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" aria-label="Next Page">
+                                    <span></span> <!-- gle > -->
+                                    <span>Next</span>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </main>
 
-        <footer class="footer">
-            <div class="content-container">
-                <nav class="footer-nav nav-bar">
-                    <ul class="navbar-left">
-                        <li>
-                            <a href="#">Advertising</a>
-                        </li>
-                        <li>
-                            <a href="#">Business</a>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-right">
-                        <li>
-                            <a href="#">Privacy</a>
-                        </li>
-                        <li>
-                            <a href="#">Terms</a>
-                        </li>
-                        <li>
-                            <a href="#">Settings</a>
-                        </li>
-                    </ul>
-                </nav>
+        <footer>
+            <div class="search-location">
+                <ul>
+                    <li>
+                        <span></span>
+                        LU1, Luton
+                    </li>
+                    <li> From your Internet address</li>
+                    <li><a href="#">Use precise location</a></li>
+                    <li><a href="#">Learn more</a></li>
+                </ul>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Send feedback</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </nav>
         </footer>
     </body>
 </html>
