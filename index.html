@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
         <title>mdn - Google Search</title>
     </head>
 
@@ -20,9 +20,9 @@
             <form action="get">
                 <div id="input-container">
                     <input type="text" role="search" value="mdn" />
-                    <div class="input-btn-container">
-                        <span role="button search" class="glyphicon glyphicon-mic"></span>
-                        <span role="button search" class="glyphicon glyphicon-search"></span>
+                    <div id="input-btn-container">
+                        <span role="button search" class="icon icon-mic"></span>
+                        <span role="button search" class="icon icon-search"></span>
                     </div>
                 </div>
             </form>
@@ -30,12 +30,12 @@
                 <ul>
                     <li>
                         <a href="#" aria-label="Main Menu">
-                            <span role="button" class="glyphicon glyphicon-menu"></span>
+                            <span role="button" class="icon icon-menu"></span>
                         </a>
                     </li>
                     <li>
                         <a href="#" aria-label="Notifications">
-                            <span role="button" class="glyphicon glyphicon-notification"></span>
+                            <span role="button" class="icon icon-notification"></span>
                         </a>
                     </li>
                     <li>
@@ -47,14 +47,14 @@
             </nav>
             <div id="query-options">
                 <ul class="left">
-                    <li><a href="#" class="active">All</a></li>
-                    <li><a href="#">News</a></li>
+                    <li class="active"><a href="#">All</a></li>
                     <li><a href="#">Shopping</a></li>
+                    <li><a href="#">News</a></li>
                     <li><a href="#">Images</a></li>
                     <li><a href="#">Videos</a></li>
                     <li>
                         <a href="#">More</a>
-                        <ul>
+                        <ul class="hidden">
                             <li>Maps</li>
                             <li>Books</li>
                             <li>Flights</li>

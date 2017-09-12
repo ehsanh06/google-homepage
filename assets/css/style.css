@@ -1,0 +1,177 @@
+html, body, div, form, fieldset, legend, label {
+    margin: 0;
+    padding: 0;
+    font-family: arial,sans-serif;
+    content: "";
+    box-sizing: content-box;
+    color: #777;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th, td {
+    text-align: left;
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6, th, td, caption { font-weight:normal; }
+
+img { border: 0; }
+
+ul, ol, li { list-style: none; }
+
+a { 
+    text-decoration: none;
+    color: #777;
+}
+
+
+/*  Header 
+================== */
+header {
+    clear: both;
+    width: 100%;
+    border-bottom:1px solid #ebebeb;
+    background-color: #fafafa;
+    padding-top: 5px;
+}
+
+/* Logo  */
+header div.logo-container {
+    width: 10%;
+    float: left;
+    padding: 1em; 
+}
+header div.logo-container a,
+header div.logo-container a > img#logo { 
+    width: 100%;
+}
+
+/* Form  */
+header form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: left;
+    display: inline-block;
+}
+header form > div#input-container { width: 100% }
+header form > div#input-container > input { 
+    width: 85%;
+    padding: 1em;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16),
+                0 0 0 1px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+header form > div#input-container > input:focus,
+header form > div#input-container > input:hover {
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+/* Glyphicons  */
+.icon {
+    width: 20px; 
+    height: 20px;
+}
+
+header form > div#input-container > div#input-btn-container { display: inline-block; }
+header form > div#input-container > div#input-btn-container span {
+    display: inline-block;
+    position: relative;
+    right: 80px;
+    top: 5px;
+    margin: 0 5px;
+}
+
+header form > div#input-container > div#input-btn-container span.icon-mic {
+    background: url(../img/glyphs/151438-200.png) no-repeat;
+    background-size: 100%;
+}
+header form > div#input-container > div#input-btn-container span.icon-search {
+    background: url(../img/glyphs/i1_1967ca6a.png) no-repeat;
+    background-position-x: -250px;
+    background-position-y: -35px;
+}
+/* Navigation */
+header nav {
+    width: 170px;
+    margin: 0 25px auto;
+    float: right;
+}
+header nav ul { 
+    display: inline-flex;
+    width: 135px;
+}
+header nav ul li {
+    padding: 10px;
+    float: left;
+    text-align: center;
+}
+
+header nav ul li:nth-child(2) a {
+    line-height: 35px;
+}
+
+header nav ul li a span { display: inline-block; }
+header nav ul li a span.icon-menu {
+    background: url(../img/glyphs/i1_1967ca6a.png) no-repeat;
+    background-position-x: -135px;
+    background-position-y: -40px;
+    width: 25px;
+    height: 25px;
+    
+}
+header nav ul li a span.icon-notification {
+    background: url(../img/glyphs/i1_1967ca6a.png) no-repeat #000;
+    border-radius: 100%;
+    background-position-x: -194px;
+    background-position-y: -21px;
+    
+}
+
+header nav ul li a img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+/* Query Options  */
+header div#query-options {
+    width: 55%;
+    display: inline-flex;
+}
+header div#query-options ul { display: inline-block; }
+header div#query-options ul:first-child { 
+    width: 60%;
+    margin: 0px -30px auto;
+}
+header div#query-options ul:nth-of-type(2) { 
+    width: 25%;
+    margin: 0px 25px auto;
+}
+
+header div#query-options ul.left { float: left; }
+header div#query-options ul.right { float: right; }
+
+header div#query-options ul li {
+    padding: 15px;
+    float: left;
+    text-align: center;
+    font-size: small;
+}
+
+header div#query-options ul:nth-child(2) li { line-height:15px; }
+
+header div#query-options ul > li.active {
+    border-bottom: 3px solid #4285f4;
+    color: #4285f4;
+    font-weight: bold;
+}
+
+header div#query-options ul > li > .hidden { display : none; }
+
+header div#query-options ul li a:hover { color: #000; } 
