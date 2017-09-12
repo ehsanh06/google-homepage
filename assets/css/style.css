@@ -32,7 +32,6 @@ a {
 /*  Header 
 ================== */
 header {
-    clear: both;
     width: 100%;
     border-bottom:1px solid #ebebeb;
     background-color: #fafafa;
@@ -41,22 +40,21 @@ header {
 
 /* Logo  */
 header div.logo-container {
-    width: 10%;
+    width: 125px;
     float: left;
-    padding: 1em; 
+    padding: 20px;
+    display: inline-flex;
+    margin-left: -5px
 }
 header div.logo-container a,
-header div.logo-container a > img#logo { 
-    width: 100%;
-}
+header div.logo-container a > img#logo {  width: 120px; }
 
 /* Form  */
 header form {
-    width: 50%;
-    margin: 0 auto;
+    width: 720px;
+    margin: 0 -20px auto;
     padding: 1em;
-    text-align: left;
-    display: inline-block;
+    display: inline-flex;
 }
 header form > div#input-container { width: 100% }
 header form > div#input-container > input { 
