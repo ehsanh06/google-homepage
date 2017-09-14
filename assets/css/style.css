@@ -191,6 +191,11 @@ main > small {
     margin: 15px 0;
 }
 
+main div.search-result { 
+    width: 60%; 
+    margin: 15px 0;
+}
+
 main div.search-result .search-title {
     margin: 0;
     padding: 0;
@@ -206,7 +211,6 @@ main div.search-result p { line-height: 1.4; }
 
 
 /* First Search result  */
-main div.search-result:first-of-type { width: 60%; }
 main div.search-result:first-of-type .search-title  { width: 140px; }
 
 .two-col {
@@ -247,3 +251,9 @@ main div.search-result:first-of-type .search-result-sublinks .col-1 div span a:v
     color: #609;
 }
 
+/* Other search result */
+
+.list-placeholder { margin: 0 5px; }
+
+main div.search-result ul { display: inline-flex; }
+main div.search-result ul li { font-size: small; }
