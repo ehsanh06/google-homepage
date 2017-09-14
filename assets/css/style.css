@@ -242,7 +242,7 @@ main div.search-result:first-of-type .search-result-sublinks .col-1 div span {
 }
 
 main div.search-result:first-of-type .search-result-sublinks .col-1 div span a {
-    color: #1a0dab
+    color: #1a0dab;
 }
 main div.search-result:first-of-type .search-result-sublinks .col-1 div span a:hover {
     text-decoration: underline;
@@ -257,3 +257,21 @@ main div.search-result:first-of-type .search-result-sublinks .col-1 div span a:v
 
 main div.search-result ul { display: inline-flex; }
 main div.search-result ul li { font-size: small; }
+
+/* Search related to mdn */
+
+main div.search-related { margin: 10px 0 30px 0; }
+main div.search-related h3 {
+    color: #222;
+    margin: 30px 0;
+}
+main div.search-related .two-col .col-1 { width: 30%; }
+main div.search-related .two-col .col-2 { width: 60%; }
+
+main div.search-related ul li { 
+    font-size: 14px;
+    line-height: 2;
+}
+main div.search-related ul li a { color: #1a0dab; }
+main div.search-related ul li a:hover { text-decoration: underline; }
+main div.search-related ul li a:visited { color: #609; }
