@@ -156,7 +156,7 @@ header div#query-options {
 header div#query-options ul { display: inline-block; }
 header div#query-options ul:first-child { 
     width: 60%;
-    margin: 0px -30px auto;
+    margin: 0px 8px auto;
 }
 header div#query-options ul:nth-of-type(2) { 
     width: 25%;
