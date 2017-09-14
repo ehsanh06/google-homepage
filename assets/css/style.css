@@ -5,6 +5,7 @@
 
 html, body, div, form, fieldset, legend, label {
     font-family: arial,sans-serif;
+    font-size: 100%;
     content: "";
     box-sizing: content-box;
     color: #777;
@@ -34,6 +35,10 @@ a {
 
 /*  Header 
 ================== */
+h3 {
+    font-size: 18px;
+}
+
 header {
     width: 100%;
     border-bottom:1px solid #ebebeb;
