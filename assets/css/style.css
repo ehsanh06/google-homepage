@@ -280,3 +280,75 @@ main div.search-related ul li {
 main div.search-related ul li a { color: #1a0dab; }
 main div.search-related ul li a:hover { text-decoration: underline; }
 main div.search-related ul li a:visited { color: #609; }
+
+/* Page numbers/change  */
+main div.search-results__page-number {
+    width: 610px;
+}
+
+main div.search-results__page-number table {
+    width: 275px;
+    margin: 0 auto;
+}
+
+main div.search-results__page-number table td {
+    text-align: center;
+}
+
+main div.search-results__page-number table td  {
+    color: #222;
+    font-size: small;
+}
+main div.search-results__page-number table td a {
+    color: #4285f4;
+}
+
+main div.search-results__page-number table span {
+    height: 30px;
+    width: 30px;
+    display: block;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+/* Letter G */
+main div.search-results__page-number table #page-number-G {
+    background: url(../img/glyphs/nav_logo242.png) no-repeat;
+    background-position-x: -24px;
+    background-position-y: 0px;
+}
+/* Page 1 */
+main div.search-results__page-number table #page-number-1 {
+    background: url(../img/glyphs/nav_logo242.png) no-repeat;
+    background-position-x: -53px;
+    background-position-y: 0px;
+    width: 20px;
+}
+/* Page 2-10 */
+main div.search-results__page-number table #page-number-2,
+main div.search-results__page-number table #page-number-3,
+main div.search-results__page-number table #page-number-4,
+main div.search-results__page-number table #page-number-5,
+main div.search-results__page-number table #page-number-6,
+main div.search-results__page-number table #page-number-7,
+main div.search-results__page-number table #page-number-8,
+main div.search-results__page-number table #page-number-9,
+main div.search-results__page-number table #page-number-10 {
+    background: url(../img/glyphs/nav_logo242.png) no-repeat;
+    background-position-x: -73px;
+    background-position-y: 0px;
+    width: 20px;
+;
+}
+
+/* Page GLE next */
+main div.search-results__page-number table td:last-child {
+    text-align: right;
+}
+main div.search-results__page-number table #page-number-GLE {
+    background: url(../img/glyphs/nav_logo242.png) no-repeat;
+    background-position-x: -93px;
+    background-position-y: 0px;
+    height: 30px;
+    width: 90px;
+}
