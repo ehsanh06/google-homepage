@@ -179,7 +179,7 @@ header div#query-options ul > li.active {
 }
 
 header div#query-options ul > li > .hidden { display : none; }
-
+header div#query-options ul li.active a:first-child { color: #4285f4; }
 header div#query-options ul li a:hover { color: #000; } 
 
 
