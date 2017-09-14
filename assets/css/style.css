@@ -1,6 +1,9 @@
-html, body, div, form, fieldset, legend, label {
+* {
     margin: 0;
     padding: 0;
+}
+
+html, body, div, form, fieldset, legend, label {
     font-family: arial,sans-serif;
     content: "";
     box-sizing: content-box;
@@ -173,3 +176,74 @@ header div#query-options ul > li.active {
 header div#query-options ul > li > .hidden { display : none; }
 
 header div#query-options ul li a:hover { color: #000; } 
+
+
+/*  Main
+============= */
+.strong { font-weight: bold; }
+
+main {
+    width: 985px;
+    margin: 0 auto;
+}
+main > small {
+    display: block;
+    margin: 15px 0;
+}
+
+main div.search-result .search-title {
+    margin: 0;
+    padding: 0;
+}
+
+main div.search-result .search-title a { color: #1a0dab; }
+main div.search-result .search-title a:hover { text-decoration: underline; }
+main div.search-result .search-title a:visited { color: #609; }
+
+main div.search-result > span { color: darkgreen; }
+main div.search-result span, div.search-result p { font-size: small; }
+main div.search-result p { line-height: 1.4; }
+
+
+/* First Search result  */
+main div.search-result:first-of-type { width: 60%; }
+main div.search-result:first-of-type .search-title  { width: 140px; }
+
+.two-col {
+    width: 100%;
+    display: flex;
+}
+main div.search-result:first-of-type .search-result-sublinks {
+    padding: 0 20px;
+    margin-left: 10px
+}
+main div.search-result:first-of-type .search-result-sublinks .col-1,
+main div.search-result:first-of-type .search-result-sublinks .col-2 {
+    width: 100%;
+}
+main div.search-result:first-of-type .search-result-sublinks .col-2 {
+    margin-left: 100px;
+}
+main div.search-result:first-of-type .search-result-sublinks .col-1 > div,
+main div.search-result:first-of-type .search-result-sublinks .col-2 > div {
+    margin: 10px 0;
+}
+main div.search-result:first-of-type .search-result-sublinks .col-1 div h3,
+main div.search-result:first-of-type .search-result-sublinks .col-2 div h3 {
+    width: 100%;
+}
+main div.search-result:first-of-type .search-result-sublinks .col-1 div span {
+    margin-top: 10px;
+    display: block;
+}
+
+main div.search-result:first-of-type .search-result-sublinks .col-1 div span a {
+    color: #1a0dab
+}
+main div.search-result:first-of-type .search-result-sublinks .col-1 div span a:hover {
+    text-decoration: underline;
+}
+main div.search-result:first-of-type .search-result-sublinks .col-1 div span a:visited {
+    color: #609;
+}
+
