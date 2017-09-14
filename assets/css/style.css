@@ -48,6 +48,7 @@ header {
 
 /* Logo  */
 header div.logo-container {
+
     width: 125px;
     float: left;
     padding: 20px;
@@ -66,6 +67,7 @@ header form {
 }
 header form > div#input-container { width: 100% }
 header form > div#input-container > input { 
+    font-size: 16px;
     width: 85%;
     padding: 1em;
     border: 0;
@@ -74,6 +76,7 @@ header form > div#input-container > input {
                 0 0 0 1px rgba(0, 0, 0, 0.08);
     transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
 }
+
 header form > div#input-container > input:focus,
 header form > div#input-container > input:hover {
     outline: -webkit-focus-ring-color auto 5px;
