@@ -52,7 +52,7 @@ header {
 }
 
 /* Logo  */
-header div.logo-container {
+.logo-container {
 
     width: 125px;
     float: left;
@@ -60,18 +60,18 @@ header div.logo-container {
     display: inline-flex;
     margin-left: -5px
 }
-header div.logo-container a,
-header div.logo-container a > img#logo {  width: 120px; }
+.logo-container a,
+.logo-container a > img#logo {  width: 120px; }
 
 /* Form  */
-header form {
+form {
     width: 720px;
     margin: 0 -20px auto;
     padding: 1em;
     display: inline-flex;
 }
-header form > div#input-container { width: 100% }
-header form > div#input-container > input { 
+form > #input-container { width: 100% }
+form > #input-container input { 
     font-size: 16px;
     width: 85%;
     padding: 1em;
@@ -82,8 +82,8 @@ header form > div#input-container > input {
     transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
-header form > div#input-container > input:focus,
-header form > div#input-container > input:hover {
+form > #input-container > input:focus,
+form > #input-container > input:hover {
     outline: -webkit-focus-ring-color auto 5px;
 }
 
@@ -93,8 +93,8 @@ header form > div#input-container > input:hover {
     height: 20px;
 }
 
-header form > div#input-container > div#input-btn-container { display: inline-block; }
-header form > div#input-container > div#input-btn-container span {
+form > #input-container > #input-btn-container { display: inline-block; }
+form > #input-container > #input-btn-container span {
     display: inline-block;
     position: relative;
     right: 80px;
@@ -102,11 +102,11 @@ header form > div#input-container > div#input-btn-container span {
     margin: 0 5px;
 }
 
-header form > div#input-container > div#input-btn-container span.icon-mic {
+form > #input-container > #input-btn-container .icon-mic {
     background: url(../img/glyphs/151438-200.png) no-repeat;
     background-size: 100%;
 }
-header form > div#input-container > div#input-btn-container span.icon-search {
+form > #input-container > #input-btn-container .icon-search {
     background: url(../img/glyphs/i1_1967ca6a.png) no-repeat;
     background-position-x: -250px;
     background-position-y: -35px;
@@ -114,7 +114,7 @@ header form > div#input-container > div#input-btn-container span.icon-search {
 /* Navigation */
 header nav {
     width: 170px;
-    margin: 0 25px auto;
+    margin: 15px 25px;
     float: right;
 }
 header nav ul { 
@@ -132,7 +132,7 @@ header nav ul li:nth-child(2) a {
 }
 
 header nav ul li a span { display: inline-block; }
-header nav ul li a span.icon-menu {
+header nav ul li a .icon-menu {
     background: url(../img/glyphs/i1_1967ca6a.png) no-repeat;
     background-position-x: -135px;
     background-position-y: -40px;
@@ -140,7 +140,7 @@ header nav ul li a span.icon-menu {
     height: 25px;
     
 }
-header nav ul li a span.icon-notification {
+header nav ul li a .icon-notification {
     background: url(../img/glyphs/i1_1967ca6a.png) no-repeat #000;
     border-radius: 100%;
     background-position-x: -194px;
@@ -154,42 +154,41 @@ header nav ul li a img {
 }
 
 /* Query Options  */
-header div#query-options {
+#query-options {
     width: 55%;
     display: inline-flex;
 }
-header div#query-options ul { display: inline-block; }
-header div#query-options ul:first-child { 
+#query-options ul { display: inline-block; }
+#query-options ul:first-child { 
     width: 60%;
     margin: 0px 8px auto;
 }
-header div#query-options ul:nth-of-type(2) { 
+#query-options ul:nth-of-type(2) { 
     width: 25%;
     margin: 0px 25px auto;
 }
 
-header div#query-options ul.left { float: left; }
-header div#query-options ul.right { float: right; }
+#query-options ul.left { float: left; }
+#query-options ul.right { float: right; }
 
-header div#query-options ul li {
+#query-options ul li {
     padding: 15px;
     float: left;
     text-align: center;
     font-size: small;
 }
 
-header div#query-options ul:nth-child(2) li { line-height:15px; }
+#query-options ul:nth-child(2) li { line-height:15px; }
 
-header div#query-options ul > li.active {
+#query-options ul > li.active {
     border-bottom: 3px solid #4285f4;
     color: #4285f4;
     font-weight: bold;
 }
 
-header div#query-options ul > li > .hidden { display : none; }
-header div#query-options ul li.active a:first-child { color: #4285f4; }
-header div#query-options ul li a:hover { color: #000; } 
-
+#query-options ul > li > .hidden { display : none; }
+#query-options ul li.active a:first-child { color: #4285f4; }
+#query-options ul li a:hover { color: #000; } 
 
 /*  Main
 ============= */
@@ -204,114 +203,107 @@ main > small {
     margin: 15px 0;
 }
 
-main div.search-result { 
+.search-result { 
     width: 60%; 
     margin: 15px 0;
 }
 
-main div.search-result .search-title {
+.search-result .search-title {
     margin: 0;
     padding: 0;
 }
 
-main div.search-result .search-title a { color: #1a0dab; }
-main div.search-result .search-title a:hover { text-decoration: underline; }
-main div.search-result .search-title a:visited { color: #609; }
+.search-result .search-title a { color: #1a0dab; }
+.search-result .search-title a:hover { text-decoration: underline; }
+.search-result .search-title a:visited { color: #609; }
 
-main div.search-result > span { color: darkgreen; }
-main div.search-result span, div.search-result p { font-size: small; }
-main div.search-result p { line-height: 1.4; }
+.search-result > span { color: darkgreen; }
+.search-result span, div.search-result p { font-size: small; }
+.search-result p { line-height: 1.4; }
 
 
 /* First Search result  */
-main div.search-result:first-of-type .search-title  { width: 140px; }
+.search-result:first-of-type .search-title  { width: 140px; }
 
 .two-col {
     width: 100%;
     display: flex;
 }
-main div.search-result:first-of-type .search-result-sublinks {
+.search-result:first-of-type .search-result-sublinks {
     padding: 0 20px;
     margin-left: 10px
 }
-main div.search-result:first-of-type .search-result-sublinks .col-1,
-main div.search-result:first-of-type .search-result-sublinks .col-2 {
+.search-result:first-of-type .col-1,
+.search-result:first-of-type .col-2 {
     width: 100%;
 }
-main div.search-result:first-of-type .search-result-sublinks .col-2 {
-    margin-left: 100px;
-}
-main div.search-result:first-of-type .search-result-sublinks .col-1 > div,
-main div.search-result:first-of-type .search-result-sublinks .col-2 > div {
+.search-result:first-of-type .col-2 { margin-left: 100px; }
+
+.search-result:first-of-type .col-1 > div,
+.search-result:first-of-type .col-2 > div {
     margin: 10px 0;
 }
-main div.search-result:first-of-type .search-result-sublinks .col-1 div h3,
-main div.search-result:first-of-type .search-result-sublinks .col-2 div h3 {
+.search-result:first-of-type .col-1 > div h3,
+.search-result:first-of-type .col-2 > div h3 {
     width: 100%;
 }
-main div.search-result:first-of-type .search-result-sublinks .col-1 div span {
+.search-result:first-of-type .col-1 div span {
     margin-top: 10px;
     display: block;
 }
 
-main div.search-result:first-of-type .search-result-sublinks .col-1 div span a {
+.search-result:first-of-type .col-1 div span a {
     color: #1a0dab;
 }
-main div.search-result:first-of-type .search-result-sublinks .col-1 div span a:hover {
+.search-result:first-of-type .col-1 div span a:hover {
     text-decoration: underline;
 }
-main div.search-result:first-of-type .search-result-sublinks .col-1 div span a:visited {
+.search-result:first-of-type .col-1 div span a:visited {
     color: #609;
 }
 
-/* Other search result */
+/* Other search results */
 
 .list-placeholder { margin: 0 5px; }
 
-main div.search-result ul { display: inline-flex; }
-main div.search-result ul li { font-size: small; }
+.search-result ul { display: inline-flex; }
+.search-result ul li { font-size: small; }
 
 /* Search related to mdn */
 
-main div.search-related { margin: 10px 0 30px 0; }
-main div.search-related h3 {
+.search-related { margin: 10px 0 30px 0; }
+.search-related h3 {
     color: #222;
     margin: 30px 0;
 }
-main div.search-related .two-col .col-1 { width: 30%; }
-main div.search-related .two-col .col-2 { width: 60%; }
+.search-related .col-1 { width: 30%; }
+.search-related .col-2 { width: 60%; }
 
-main div.search-related ul li { 
+.search-related ul li { 
     font-size: 14px;
     line-height: 2;
 }
-main div.search-related ul li a { color: #1a0dab; }
-main div.search-related ul li a:hover { text-decoration: underline; }
-main div.search-related ul li a:visited { color: #609; }
+.search-related ul li a { color: #1a0dab; }
+.search-related ul li a:hover { text-decoration: underline; }
+.search-related ul li a:visited { color: #609; }
 
-/* Page numbers/change  */
-main div.search-results__page-number {
-    width: 610px;
-}
+/* GOOOOOOOOOOGLE */
+.search-results__page-number { width: 610px; }
 
-main div.search-results__page-number table {
+.search-results__page-number table {
     width: 275px;
     margin: 0 auto;
 }
 
-main div.search-results__page-number table td {
-    text-align: center;
-}
+.search-results__page-number table td { text-align: center; }
 
-main div.search-results__page-number table td  {
+.search-results__page-number table td  {
     color: #222;
     font-size: small;
 }
-main div.search-results__page-number table td a {
-    color: #4285f4;
-}
+.search-results__page-number table td a { color: #4285f4; }
 
-main div.search-results__page-number table span {
+.search-results__page-number table span {
     height: 30px;
     width: 30px;
     display: block;
@@ -320,28 +312,24 @@ main div.search-results__page-number table span {
 }
 
 /* Letter G */
-main div.search-results__page-number table #page-number-G {
+#page-number-G {
     background: url(../img/glyphs/nav_logo242.png) no-repeat;
     background-position-x: -24px;
     background-position-y: 0px;
 }
 /* Page 1 */
-main div.search-results__page-number table #page-number-1 {
+#page-number-1 {
     background: url(../img/glyphs/nav_logo242.png) no-repeat;
     background-position-x: -53px;
     background-position-y: 0px;
     width: 20px;
 }
 /* Page 2-10 */
-main div.search-results__page-number table #page-number-2,
-main div.search-results__page-number table #page-number-3,
-main div.search-results__page-number table #page-number-4,
-main div.search-results__page-number table #page-number-5,
-main div.search-results__page-number table #page-number-6,
-main div.search-results__page-number table #page-number-7,
-main div.search-results__page-number table #page-number-8,
-main div.search-results__page-number table #page-number-9,
-main div.search-results__page-number table #page-number-10 {
+#page-number-2, #page-number-3,
+#page-number-4, #page-number-5,
+#page-number-6, #page-number-7,
+#page-number-8, #page-number-9,
+#page-number-10 {
     background: url(../img/glyphs/nav_logo242.png) no-repeat;
     background-position-x: -73px;
     background-position-y: 0px;
@@ -350,10 +338,10 @@ main div.search-results__page-number table #page-number-10 {
 }
 
 /* Page GLE next */
-main div.search-results__page-number table td:last-child {
+.search-results__page-number table td:last-child {
     text-align: right;
 }
-main div.search-results__page-number table #page-number-GLE {
+.search-results__page-number table #page-number-GLE {
     background: url(../img/glyphs/nav_logo242.png) no-repeat;
     background-position-x: -93px;
     background-position-y: 0px;
