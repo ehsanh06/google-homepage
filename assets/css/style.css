@@ -98,24 +98,26 @@ form > #input-container > input:hover {
     height: 20px;
 }
 
-form > #input-container > #input-btn-container { display: inline-block; }
-form > #input-container > #input-btn-container span {
-    display: inline-block;
+form > #input-container  #input-btn-container {
     position: relative;
-    right: 80px;
-    top: 5px;
-    margin: 0 5px;
+    width: 100%; 
+}
+form > #input-container  #input-btn-container > .material-icons {
+    color: #4285F4;
 }
 
-form > #input-container > #input-btn-container .icon-mic {
-    background: url(../img/glyphs/151438-200.png) no-repeat;
-    background-size: 100%;
+form > #input-container  #input-btn-container #search-icon-mic {
+    position: absolute;
+    top: 15px;
+    right: 140px;
 }
-form > #input-container > #input-btn-container .icon-search {
-    background: url(../img/glyphs/i1_1967ca6a.png) no-repeat;
-    background-position-x: -250px;
-    background-position-y: -35px;
+
+form > #input-container #input-btn-container #search-icon-search {
+    position: absolute;
+    top: 15px;
+    right: 95px;
 }
+
 /* Navigation */
 header nav {
     width: 170px;

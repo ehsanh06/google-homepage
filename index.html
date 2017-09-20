@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/style.css" type="text/css">
         <title>mdn - Google Search</title>
     </head>
@@ -19,10 +20,11 @@
             </div>
             <form action="get">
                 <div id="input-container">
-                    <input type="text" role="search" value="mdn" />
                     <div id="input-btn-container">
-                        <span role="button search" class="icon icon-mic"></span>
-                        <span role="button search" class="icon icon-search"></span>
+                        <!-- <span role="button search" class="icon icon-mic"></span> -->
+                        <i id="search-icon-mic" class="material-icons">mic</i>
+                        <i id="search-icon-search" class="material-icons">search</i>
+                        <input type="text" role="search" value="mdn" />
                     </div>
                 </div>
             </form>
@@ -31,6 +33,7 @@
                     <li>
                         <a href="#" aria-label="Main Menu">
                             <span role="button" class="icon icon-menu"></span>
+                            <i class="material-icons">apps</i>
                         </a>
                     </li>
                     <li>
