@@ -104,6 +104,7 @@ form > #input-container  #input-btn-container {
 }
 form > #input-container  #input-btn-container > .material-icons {
     color: #4285F4;
+    cursor: pointer;
 }
 
 form > #input-container  #input-btn-container #search-icon-mic {
@@ -297,7 +298,7 @@ main > small {
 .search-related { margin: 10px 0 30px 0; }
 .search-related h3 {
     color: #222;
-    margin: 30px 0;
+    margin: 25px 0;
 }
 .search-related .col-1 { width: 30%; }
 .search-related .col-2 { width: 60%; }
