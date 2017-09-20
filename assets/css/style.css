@@ -179,12 +179,12 @@ header nav ul li a #menu-icon-avatar {
 
 /* Query Options  */
 #query-options {
-    width: 55%;
+    width: 53%;
     display: inline-flex;
 }
 #query-options ul { display: inline-block; }
 #query-options ul:first-child { 
-    width: 60%;
+    width: 65%;
     margin: 0px 8px auto;
 }
 #query-options ul:nth-of-type(2) { 
