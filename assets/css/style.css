@@ -85,9 +85,11 @@ form > #input-container input {
     transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
-form > #input-container > input:focus,
+form > #input-container > input:focus { 
+    outline: none;
+}
 form > #input-container > input:hover {
-    outline: -webkit-focus-ring-color auto 5px;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
 /* Glyphicons  */
