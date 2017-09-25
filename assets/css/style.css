@@ -367,3 +367,54 @@ main > small {
     height: 30px;
     width: 90px;
 }
+
+/* Footer 
+=============== */
+
+footer {
+    width: 100%;
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    margin-top: 2em;
+}
+
+footer ul li a:hover { color: #000; }
+
+/* Search location  */
+.search-location {
+    width: 465px;
+    margin: 0px 175px auto;
+    padding-top: 1em;
+}
+
+.search-location ul { display: inline-flex; }
+.search-location ul li, footer > nav ul li {
+    font-size: small;
+    color: #aaa;
+}
+.search-location ul li span#footer-icon-loc { font-size: 12px; }
+
+/* Hyphen Separators */
+.search-location ul.dashed { padding: 12px 0 }
+.search-location ul.dashed li:before { 
+    content: "-";
+    margin: 0 5px;
+}
+.search-location ul.dashed li:first-child:before {
+    content: "";
+    margin: 0;
+}
+
+/* Footer Navigation */
+footer nav {
+    width: 320px;
+    margin: 0px 165px auto;
+}
+
+footer nav ul {
+    display: inline-flex;
+}
+
+footer nav ul li {
+    padding: 12px;
+}
