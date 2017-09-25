@@ -236,7 +236,7 @@ main > small {
 .search-result .search-title a:visited { color: #609; }
 
 .search-result > span { color: darkgreen; }
-.search-result span, div.search-result p { font-size: small; }
+.search-result span, .search-result p { font-size: small; }
 .search-result p { line-height: 1.4; }
 
 
@@ -247,6 +247,7 @@ main > small {
     width: 100%;
     display: flex;
 }
+
 .search-result:first-of-type .search-result-sublinks {
     padding: 0 20px;
     margin-left: 10px
