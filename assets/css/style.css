@@ -204,7 +204,32 @@ header nav ul li a #menu-icon-avatar {
     font-weight: bold;
 }
 
-#query-options ul > li > .hidden { display : none; }
+/* Query Options dropdown */
+#query-options ul li > .hidden { display : none; }
+#query-options ul li > ul {
+    display: block;
+    position: absolute;
+    top: 130px;
+    left: 510px;
+    background: #fff;
+    outline: none;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 6px 0;
+}
+
+#query-options ul li > ul li {
+    color: #000;
+    float: none;
+    padding: 8px 16px;
+    text-align: left;
+    display: block;
+    cursor: pointer;
+}
+
+#query-options ul li > ul li:hover {
+    background:#E5E5E5;
+}
+
 #query-options ul li.active a:first-child { color: #4285f4; }
 #query-options ul li a:hover { color: #000; } 
 
