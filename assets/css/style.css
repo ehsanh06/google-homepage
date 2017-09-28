@@ -139,7 +139,8 @@ header nav ul li a #menu-icon-apps {
     vertical-align: text-bottom;
 }
 
-header nav ul li .apps-dropdown {
+header nav ul li a > .hidden { display : none; }
+header nav ul li ul {
     display: block;
     background: #fff;
     border: 1px solid #ccc;
@@ -153,26 +154,24 @@ header nav ul li .apps-dropdown {
     right: 20px;
     width: 280px;
 }
-header nav ul li > .hidden { display : none; }
 
-header nav ul li .apps-dropdown li {
+
+header nav ul li #apps-dropdown li {
     display: inline-block;
     z-index: 999;
     height: 80px;
     width: 70px;
     outline: none;
     border: 1px solid #fff;
-}
-
-header nav ul li .apps-dropdown li:hover {
-    border:1px solid #E5E5E5;
-}
-
-header nav ul li .apps-dropdown li a {
     font-size: small;
     color: #000;
 }
-header nav ul .apps-dropdown li span {
+
+header nav ul li #apps-dropdown li:hover {
+    border:1px solid #E5E5E5;
+}
+
+header nav ul #apps-dropdown li span {
     background: url(../img/glyphs/v1_76783e20.png) no-repeat;
     display: block;
     height: 64px;
@@ -180,40 +179,40 @@ header nav ul .apps-dropdown li span {
     margin: 0 auto;
 }
 
-header nav ul .apps-dropdown li #apps-dropdown-account {
+header nav ul #apps-dropdown li #apps-dropdown-account {
     background-position: 0 -970px;
 }
-header nav ul .apps-dropdown li #apps-dropdown-search {
+header nav ul #apps-dropdown li #apps-dropdown-search {
     background-position: 0 -75px;
 }
-header nav ul .apps-dropdown li #apps-dropdown-maps {
+header nav ul #apps-dropdown li #apps-dropdown-maps {
     background-position: 0 -1799px;
 }
-header nav ul .apps-dropdown li #apps-dropdown-youtube {
+header nav ul #apps-dropdown li #apps-dropdown-youtube {
     background-position: 0 -1518px;
 }
-header nav ul .apps-dropdown li #apps-dropdown-play {
+header nav ul #apps-dropdown li #apps-dropdown-play {
     background-position: 0 -1863px;
 }
-header nav ul .apps-dropdown li #apps-dropdown-news {
+header nav ul #apps-dropdown li #apps-dropdown-news {
     background-position: 0 -416px;
 }
-header nav ul .apps-dropdown li #apps-dropdown-gmail {
+header nav ul #apps-dropdown li #apps-dropdown-gmail {
     background-position: 0 -761px;
 }
-header nav ul .apps-dropdown li #apps-dropdown-drive {
+header nav ul #apps-dropdown li #apps-dropdown-drive {
     background-position: 0 -1105px;
 }
-header nav ul .apps-dropdown li #apps-dropdown-calendar {
+header nav ul #apps-dropdown li #apps-dropdown-calendar {
     background-position: 0 -1588px;
 }
-header nav ul .apps-dropdown li #apps-dropdown-googleplus {
+header nav ul #apps-dropdown li #apps-dropdown-googleplus {
     background-position: 0 -1383px;
 }
-header nav ul .apps-dropdown li #apps-dropdown-translate {
+header nav ul #apps-dropdown li #apps-dropdown-translate {
     background-position: 0 -692px;
 }
-header nav ul .apps-dropdown li #apps-dropdown-photos {
+header nav ul #apps-dropdown li #apps-dropdown-photos {
     background-position: 0 -624px;
 }
 
