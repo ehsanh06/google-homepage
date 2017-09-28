@@ -32,6 +32,20 @@
                     <li>
                         <a href="#" aria-label="Main Menu">
                             <i id="menu-icon-apps" class="material-icons">apps</i>
+                            <ul id="apps-dropdown" class="hidden">
+                                <li><span id="apps-dropdown-account"></span>My Account</li>
+                                <li><span id="apps-dropdown-search"></span>Search</li>
+                                <li><span id="apps-dropdown-maps"></span>Maps</li>
+                                <li><span id="apps-dropdown-youtube"></span>YouTube</li>
+                                <li><span id="apps-dropdown-play"></span>Play</li>
+                                <li><span id="apps-dropdown-news"></span>News</li>
+                                <li><span id="apps-dropdown-gmail"></span>Gmail</li>
+                                <li><span id="apps-dropdown-drive"></span>Drive</li>
+                                <li><span id="apps-dropdown-calendar"></span>Calendar</li>
+                                <li><span id="apps-dropdown-googleplus"></span>Google></li>
+                                <li><span id="apps-dropdown-translate"></span>Translate</li>
+                                <li><span id="apps-dropdown-photos"></span>Photos</li>
+                            </ul>
                         </a>
                     </li>
                     <li>
@@ -54,8 +68,8 @@
                     <li><a href="#">Images</a></li>
                     <li><a href="#">Videos</a></li>
                     <li>
-                        <a href="#">More</a>
-                        <ul class="hidden">
+                        <a href="#" id="query-options-anchor">More</a>
+                        <ul class="hidden" id="query-options-dropdown">
                             <li>Maps</li>
                             <li>Books</li>
                             <li>Flights</li>
@@ -327,5 +341,7 @@
                 </ul>
             </nav>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/js/index.js"></script>
     </body>
 </html>
